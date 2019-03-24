@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane fx:id="root" alignment="CENTER_LEFT" hgap="25.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" stylesheets="@../../css/style.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TimotheeTHIBAULT.ui.fxmlControllers.TopBarController">
+    <children>
+        <Button id="backButton" fx:id="backButton" mnemonicParsing="false" GridPane.columnIndex="0" GridPane.hgrow="NEVER" />
+        <Button id="homeButton" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.hgrow="NEVER" />
+        <Button id="buyHistory" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.hgrow="NEVER" />
+        <Region maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" GridPane.columnIndex="3" GridPane.hgrow="SOMETIMES" />
+        <Label text="Nom utilisateur" GridPane.columnIndex="4" GridPane.hgrow="NEVER" />
+        <ImageView id="userImage" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.hgrow="NEVER" />
+        <Button id="signOutButton" mnemonicParsing="false" GridPane.columnIndex="6" GridPane.hgrow="NEVER" />
+    </children>
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints />
+        <ColumnConstraints />
+        <ColumnConstraints />
+        <ColumnConstraints />
+        <ColumnConstraints />
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+   <padding>
+      <Insets left="20.0" right="20.0" />
+   </padding>
+</GridPane>

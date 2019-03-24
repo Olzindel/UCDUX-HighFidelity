@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<ScrollPane xmlns="http://javafx.com/javafx/8.0.172-ea"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="TimotheeTHIBAULT.ui.fxmlControllers.SignUpController">
+    <content>
+        <BorderPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity"
+                    minHeight="-Infinity" minWidth="-Infinity"
+                    stylesheets="@../../css/style.css">
+            <left>
+                <Separator opacity="0.0" prefWidth="100.0"
+                           BorderPane.alignment="CENTER"/>
+            </left>
+            <center>
+                <VBox fx:id="SignUpForm" alignment="CENTER" prefHeight="600.0"
+                      prefWidth="600.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <Label fx:id="signUpText" alignment="CENTER"
+                               contentDisplay="CENTER" prefHeight="90.0"
+                               prefWidth="759.0" text="Inscription"
+                               textAlignment="CENTER">
+                            <font>
+                                <Font name="System Bold" size="39.0"/>
+                            </font>
+                            <graphic>
+                                <Separator opacity="0.0" orientation="VERTICAL"
+                                           prefHeight="137.0" prefWidth="6.0"/>
+                            </graphic>
+                        </Label>
+                        <HBox alignment="CENTER" prefHeight="100.0"
+                              prefWidth="200.0">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0"
+                                      text="Pseudonyme : ">
+                                    <font>
+                                        <Font size="16.0"/>
+                                    </font>
+                                </Text>
+                                <TextField fx:id="textFieldNickName"
+                                           promptText="Pseudonyme"/>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0"
+                              prefWidth="200.0">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0"
+                                      text="Mot de passe : ">
+                                    <font>
+                                        <Font size="16.0"/>
+                                    </font>
+                                </Text>
+                                <PasswordField fx:id="passwordFieldPassword"
+                                               promptText="Mot de passe"/>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0"
+                              prefWidth="200.0">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0"
+                                      text="Confirmation de mot de passe : ">
+                                    <font>
+                                        <Font size="16.0"/>
+                                    </font>
+                                </Text>
+                                <PasswordField
+                                        fx:id="passwordFieldPasswordConfirm"
+                                        promptText="Mot de passe"/>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0"
+                              prefWidth="200.0">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0"
+                                      text="Email :">
+                                    <font>
+                                        <Font size="16.0"/>
+                                    </font>
+                                </Text>
+                                <TextField fx:id="textFieldEmail"
+                                           promptText="Email"/>
+                            </children>
+                        </HBox>
+                        <Button fx:id="signUpButton" mnemonicParsing="false"
+                                text="Inscription" textAlignment="CENTER"/>
+                    </children>
+                </VBox>
+            </center>
+            <right>
+                <Separator opacity="0.0" prefWidth="100.0"
+                           BorderPane.alignment="CENTER"/>
+            </right>
+            <top>
+                <HBox alignment="CENTER_LEFT">
+                    <children>
+                        <Button id="backButton"
+                                fx:id="backButton"
+                                xmlns="http://javafx.com/javafx/8.0.172-ea"
+                                xmlns:fx="http://javafx.com/fxml/1"
+                                    onAction="#clickOnBack">
+                        </Button>
+                        <Separator opacity="0.0" orientation="VERTICAL"
+                                   prefHeight="60.0"/>
+                    </children>
+                    <BorderPane.margin>
+                        <Insets left="5.0"/>
+                    </BorderPane.margin>
+                </HBox>
+            </top>
+        </BorderPane>
+    </content>
+</ScrollPane>

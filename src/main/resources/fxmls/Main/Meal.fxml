@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<Button prefHeight="340.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <graphic>
+      <BorderPane>
+         <center>
+            <TextFlow>
+               <children>
+                  <ImageView fitHeight="83.0" fitWidth="173.0" pickOnBounds="true" preserveRatio="true" />
+                   <Text text="Omitto iuris dictionem in libera civitate contra leges senatusque consulta; caedes relinquo; libidines praetereo, quarum acerbissimum extat indicium et ad insignem memoriam turpitudinis et paene ad iustum odium imperii nostri, quod constat nobilissimas virgines se in puteos abiecisse et morte voluntaria necessariam turpitudinem depulisse. Nec haec idcirco omitto, quod non gravissima sint, sed quia nunc sine teste dico." wrappingWidth="1028.583984375">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Text>
+               </children>
+            </TextFlow>
+         </center>
+         <bottom>
+            <BorderPane BorderPane.alignment="CENTER">
+               <center>
+               </center>
+               <left>
+                  <Label fx:id="price" text="Price" BorderPane.alignment="BOTTOM_LEFT" />
+               </left>
+               <right>
+                  <HBox BorderPane.alignment="BOTTOM_RIGHT">
+                     <children>
+                        <ImageView fx:id="star1" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="star2" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="star3" fitHeight="20.0" fitWidth="20.0" layoutX="210.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="star4" fitHeight="20.0" fitWidth="20.0" layoutX="410.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="star5" fitHeight="20.0" fitWidth="20.0" layoutX="610.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </HBox>
+               </right>
+            </BorderPane>
+         </bottom>
+      </BorderPane>
+   </graphic>
+</Button>

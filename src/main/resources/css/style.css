@@ -1,0 +1,95 @@
+#connection-text-field {
+    -fx-background-color: -fx-text-box-border, -fx-background;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-background-radius: 0;
+}
+
+.text-field:focused {
+    -fx-background-color: -fx-focus-color, -fx-background;
+}
+
+.password-field {
+    -fx-background-color: -fx-text-box-border, -fx-background;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-background-radius: 0;
+}
+
+.password-field:focused {
+    -fx-background-color: -fx-focus-color, -fx-background;
+}
+
+#backButton, #homeButton, #buyHistory, #signOutButton {
+    -size: 45;
+    -fx-min-width: -size;
+    -fx-max-width: -size;
+    -fx-pref-width: -size;
+    -fx-min-height: -size;
+    -fx-max-height: -size;
+    -fx-pref-height: -size;
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: transparent;
+    -fx-padding: 5, 5, 5, 5;
+}
+
+#backButton {
+    -fx-background-image: url('/Images/backArrow.svg');
+}
+
+#homeButton {
+    -fx-background-image: url('/Images/homepage.svg');
+}
+
+#buyHistory {
+    -fx-background-image: url('/Images/purchaseHistory.svg');
+}
+
+#signOutButton {
+    -fx-background-image: url('/Images/signOut.svg');
+}
+
+#backButton:hover, #homeButton:hover, #buyHistory:hover, #signOutButton:hover {
+    -size: 55;
+    -fx-min-width: -size;
+    -fx-max-width: -size;
+    -fx-pref-width: -size;
+    -fx-min-height: -size;
+    -fx-max-height: -size;
+    -fx-pref-height: -size;
+    -fx-padding: 6 4 4 6;
+}
+
+#signOutButton:hover {
+    -fx-background-image: url('/Images/signOutHover.svg');
+}
+
+#backButton:hover {
+    -fx-background-image: url('/Images/backArrowHover.svg');
+}
+
+#homeButton:hover {
+    -fx-background-image: url('/Images/homepageHover.svg');
+}
+
+#buyHistory:hover {
+    -fx-background-image: url('/Images/purchaseHistoryHover.svg');
+}
+
+.searchField {
+    -fx-padding: 0 2 0 7;
+    -fx-border-insets: 0, 1 1 1 1;
+}
+
+.searchBoxLabelIcon {
+    -glyph-size: 30;
+    -glyph-name: SEARCH;
+}
+
+#userImage {
+    -fx-image: url('/Images/user.svg');
+    -fx-pref-width: 120;
+}
+
+.scroll-pane{
+    -fx-background-color: transparent;
+}
